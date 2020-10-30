@@ -27,11 +27,11 @@ th,td{
 }
 
 
-.img-info {
+.main-content {
 	width:  100%;
 }
 
-.img-info h1 {
+.main-content h1, h2 {
 	padding: 30px 30px 20px;
 	font-family: arial;
 	/*font-size: 50px;*/
@@ -39,15 +39,7 @@ th,td{
 	/*line-height: 44px;*/
 }
 
-.img-info h2 {
-	padding: 30px 30px 20px;
-	font-family: arial;
-	/*font-size: 50px;*/
-	color: #111;
-	/*line-height: 44px;*/
-}
-
-.img-info p {
+.main-content p {
 	padding: 0px 30px 20px;
 	font-family: arial;
 	/*font-size: 16px;*/
@@ -55,13 +47,13 @@ th,td{
 	/*line-height: 24px; */
 }
 
-.img-info ol{
+.main-content ol{
 	padding: 0px 30px 20px;
 	font-family: arial;
 	color: #111;
 }
 
-.img-info ul{
+.main-content ul{
 	padding: 0px 30px 20px;
 	font-family: arial;
 	color: #111;
@@ -84,11 +76,11 @@ th,td{
 		margin: 0 auto;
 	}
 
-	.img-info h2 {
+	.main-content h2 {
 		padding: 20px 0px 0px;
 	}
 
-	.img-info p {
+	.main-content p {
 		padding: 20px 0px 0px;
 	}
 
@@ -103,17 +95,17 @@ th,td{
 		width: 1000px;
 	}
 
-	.img-info {
+	.main-content {
 		width: 100%;
 		/*float: right;*/
 	}
 
 
-	.img-info h2 {
+	.main-content h2 {
 		padding: 20px 0px 0px 30px;
 	}
 
-	.img-info p {
+	.main-content p {
 		padding: 20px 0px 30px;
 	}
 
