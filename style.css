@@ -149,5 +149,6 @@ th,td{
 
 video::cue {
  	background-color:green;
+ 	position: 50%;
  	align:left;
  }
