@@ -2,8 +2,9 @@ WEBVTT
 
 STYLE
 video::cue {
- 	background: green;
-}
+ 	background-color: green;
+ 	align: start;
+ }
 
 
 00:00.000 --> 00:04.000
