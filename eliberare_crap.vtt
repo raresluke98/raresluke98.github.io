@@ -1,7 +1,7 @@
 WEBVTT
 
 STYLE
-video::cue {
+::cue {
  	background-color: green;
  	align: start;
  }
