@@ -147,6 +147,8 @@ th,td{
 	}
 }
 
-span{
-
+::cue{
+ background:green;
+ font-style:italic;
+ color:#ffbbbb;
 }
