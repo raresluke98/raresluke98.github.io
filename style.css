@@ -149,10 +149,17 @@ th,td{
 }
 
 body {
-	counter-reset: hCounter;
+	counter-reset: contor 0;
+	counter-reset: par 0;
 }
 
 h2:before{
-	counter-increment: hCounter;
-	content: counter(h2Counter) ". ";
+	counter-increment: contor 1;
+	content: counter(contor) ". ";
+}
+
+
+p:before{
+	counter-increment: par 1;
+	content: counter(par) "Test nr. ";
 }
