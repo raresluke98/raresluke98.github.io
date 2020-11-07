@@ -3,15 +3,15 @@
 	<head>
 		<meta charset = "utf-8">
 
-	    <meta name="viewport" content="width=device-width">
 	    <meta name="keywords" content="Pescuit, pescar, magazin, undita, lanseta, mulineta, carlig, momeala, navod, mincioc">
 	    <meta name="description" content="Magazin pentru articole pescaresti. Lansete, mulinete, accesorii">
 	    <meta name="author" content="Damian-Luca Rares">
 
 		<title>Pestisorul</title>
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
-
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	</head>
@@ -24,7 +24,8 @@
 		<div class="wrapper">
 			<header>
 				<div class="main-content">
-					<h1>Pestisorul</h1>
+					<h1>Pestisorul <i class="fas fa-fish"></i></h1>
+					<nav>
 					<ul>
 					    <li><a href="#introducere">Introducere</a></li>
 					    <li><a href="#regulament">Regulament</a></li>
@@ -33,6 +34,7 @@
 					    
 					    <li><a href="#pestisor-auriu">Pestisor auriu</a></li>
 					</ul>
+					</nav>
 				</div>
 			</header>
 			<main>
@@ -42,11 +44,12 @@
 
 						<p>"Pestisorul" este un blog si magazin online dedicat atat pescarilor amatori cat si celor cu experienta. Aici veti gasi articole postate saptamanal, acoperind teme precum <b>ghiduri de incepator</b>, instructiuni pentru realziarea <b>montajelor</b>, principii de baza si sfaturi pentru tehnici specifice de pescuit, cat si un magazin cu <b>echipament</b> care acopera o gama variata de preturi, de la kituri lanseta+mulineta pentru incepatori, la produse cu cel mai bun raport calitate/pret pentru pescarii entuziasti si pana la cele mai performante si rezistente lansete si mulinete pentru competitii.</p>
 
+
 					</section>
 
 					<section id="regulament">
 
-						<h2>Regulament</h2>
+						<h2>Regulament <span class="fas fa-exclamation-circle"></span></h2>
 
 						<article>
 
@@ -173,6 +176,15 @@
 
 					</section>
 
+					<section id="eliberare">
+						<h2>Eliberare captura</h2>
+						<video width="100%" id="Eliberare crap" controls autopaly loop>
+							<source src="eliberare_crap.mp4" type="video/mp4">
+							<track kind="subtitles" srclang="ro" src="eliberare_crap.vtt label="Romanian" default />
+							Browser-ul nu suporta tag-ul video
+						</video>
+					</section>
+
 			<figure>
 				<img id="pestisor-auriu" class="img-me" src="img/pestisor-auriu.png" alt="pestisor" title="Pestisor Auriu">
 				<figcaption>Pestisor auriu</figcaption>
@@ -188,12 +200,18 @@
 			    Postare realizata de Damian-Luca Rares, Facultatea de Matematica si Informatica, Universitatea din Bucuresti, e-mail: <a href="mailto:rares.damian-luca@my.fmi.unibuc.ro">rares.damian-luca@my.fmi.unibuc.ro</a>.
 			</address>
 
+			<a href="galerie_statica.html">Catre galeria statica</a>
+
+			<br>
+
+			<a href="#top">Inapoi la inceputul documentului</a>
+
 		</footer>
+		</div>
 
-		<a href="#top">Inapoi la inceputul documentului</a>
-
+		<div class="banner">
+				<p>Acesta este un proiect scolar</p>
 		</div>
 
 	</body>
-
 </html>

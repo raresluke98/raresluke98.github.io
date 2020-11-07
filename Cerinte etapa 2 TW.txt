@@ -1,0 +1,20 @@
+Cerinte etapa 2 TW
+De facut: 
+
+	imagini responsive cu srcset/picture
+
+	audio + un video responsive cu stilizare WebVTT: cerință custom
+
+OK?	animatie cu transformări geometrice (banner cu disclaimer: site-ul este un proiect școlar) cerință custom
+
+1/2	galerie statica cu tranzitii (pagină separată) cerință custom
+
+	font extern: google API si font awesome pentru icon-uri: in h1(all), la galerie(galerie_statica), regulamet(index)
+
+	countere (continut generat)
+
+EZ	impărțirea fișierelor CSS conform schemei indicate la curs
+
+EZ	împărțirea proiectului pe foldere conform schemei indicate la curs
+
+OK	fișiere externe CSS

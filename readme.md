@@ -18,3 +18,9 @@
 	<li>Pagina este validata sintactic</li>
 	<li>Am construit un tabel cu thead, tbody, tfoot cu minim 4 coloane si 4 randuri(80-168)</li>
 </ol>
+
+<p>Pentru a doua etapa am rezolvat urmatoarele cerinte:</p>
+
+<ol>
+	<li></li>
+</ol>
