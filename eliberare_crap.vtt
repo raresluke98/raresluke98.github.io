@@ -1,12 +1,5 @@
 WEBVTT
 
-STYLE
-::cue {
- 	background-color: green;
- 	align: start;
- }
-
-
 00:00.000 --> 00:04.000
 Eliberarea capturii in <b>siguranta</b>:
 
