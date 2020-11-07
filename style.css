@@ -147,6 +147,6 @@ th,td{
 	}
 }
 
-video::cue {
- 	background: green;
+video::cue{
+ 	background-color: green;
  }
