@@ -25,29 +25,3 @@
 #gr>:nth-child(9){  grid-area: poza_9; }
 
 #gr>:nth-child(10){ grid-area: poza_10; }
-
-#gr > figure > img {
-  display: block;
-  transition: .1s transform;
-  transform: translateZ(0); /* hack */
-}
-
-#gr > figure:hover {
-  z-index: 1;
-}
-
-
-#gr > figure:hover > img {
-  transform: scale(1.5,1.5);
-  transition: .3s transform;
-}
-
-./*cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}*/

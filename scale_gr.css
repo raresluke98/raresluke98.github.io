@@ -1,0 +1,19 @@
+.zoom {
+  transition: transform 1.25s;
+}
+
+.zoom:hover {
+  transform: scale(1.3);
+  transform-origin: center bottom;
+}
+
+.zoom-text {
+  transition: color 1s;
+  width: inherit;
+  text-align: center;
+}
+
+.zoom:hover ~ .zoom-text {
+  color: indigo;
+  background-color: darkseagreen;
+}
