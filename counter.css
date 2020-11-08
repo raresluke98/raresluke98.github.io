@@ -1,0 +1,11 @@
+.main-content {
+	counter-reset: my-awesome-counter;
+}
+
+.main-content h2 {
+	counter-increment: my-awesome-counter;
+}
+
+.main-content h2:before{
+	content: counter(my-awesome-counter) ". ";
+}

@@ -35,9 +35,7 @@ th,td{
 .main-content h1, .main-content h2, .main-content h3 {
 	padding: 30px 30px 20px;
 	font-family: arial;
-	/*font-size: 50px;*/
 	color: #111;
-	/*line-height: 44px;*/
 }
 
 .main-content p {
@@ -63,6 +61,8 @@ th,td{
 .img-me {
 	width: 100%;
 }
+
+
 
 @media only screen and (min-width: 768px) {
 	.img-banner {
@@ -148,14 +148,3 @@ th,td{
 	}
 }
 
-body {
-	counter-reset: contor;
-}
-
-h2{
-	counter-increment: contor;
-}
-
-h2:before{
-	content: counter(contor) ". ";
-}
