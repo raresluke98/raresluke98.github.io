@@ -22,5 +22,11 @@
 <p>Pentru a doua etapa am rezolvat urmatoarele cerinte:</p>
 
 <ol>
-	<li></li>
+	<li>Am adaugat imagini responsive cu srcset</li>
+	<li>Am adaugat audio si un video responsive cu stilizxare WebVTT</li>
+	<li>Am adaugat o animatie cu transformari geometrice</li>
+	<li>Am adaugat font awesome</li>
+	<li>Am impartit fisierele CSS conform schemei</li>
+	<li>Am impartit proiectul pe foldere</li>
+	<li>Am adaugat fisiere externe css</li>
 </ol>
