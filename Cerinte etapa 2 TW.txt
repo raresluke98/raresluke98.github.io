@@ -9,7 +9,7 @@ OK?	animatie cu transformări geometrice (banner cu disclaimer: site-ul este un 
 
 1/2	galerie statica cu tranzitii (pagină separată) cerință custom
 
-	font extern: google API si font awesome pentru icon-uri: in h1(all), la galerie(galerie_statica), regulamet(index)
+OK	font extern: google API si font awesome pentru icon-uri: in h1(all), la galerie(galerie_statica), regulamet(index)
 
 OK	countere (continut generat)
 
