@@ -7,7 +7,6 @@
 	width: 100%;
 }
 
-
 th,td{
             border:1px solid black;
             padding:5px;
@@ -22,11 +21,9 @@ th,td{
             empty-cells:show;
         }
 
-
 .img-banner {
 	display: none;
 }
-
 
 .main-content {
 	width:  100%;
@@ -62,8 +59,6 @@ th,td{
 	width: 100%;
 }
 
-
-
 @media only screen and (min-width: 768px) {
 	.img-banner {
 		display: block;
@@ -89,7 +84,6 @@ th,td{
 		padding-top: 30px;
 	}
 }
-
 
 @media only screen and (min-width: 1000px) {
 	.wrapper {

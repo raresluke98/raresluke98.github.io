@@ -1,10 +1,12 @@
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
 	#gr {
 		display: grid;
-		grid-template-columns= repeat(4,1fr);
-		grid-template-areas: "poza_1    poza_2    poza_3    poza_4"
-							 "poza_5    .         .         poza_6"
-							 "poza_7    poza_8    poza_9    poza_10";
+		grid-template-columns= repeat(2,1fr);
+		grid-template-areas: "poza_1    poza_2"
+							 "poza_3    poza_4"
+							 "poza_5    poza_6"
+							 "poza_7    poza_8"
+							 "poza_9    poza_10";
 	}
 
 	#gr>:nth-child(1){  grid-area: poza_1; }
