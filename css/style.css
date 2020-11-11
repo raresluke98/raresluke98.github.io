@@ -120,23 +120,28 @@ th,td{
 	}
 }
 
-.banner {
-	animation-name: translatie;
+#banner {
+	animation-name: translatiec;
 	animation-iteration-count: 1;
 	animation-duration: 5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
+
 	height: 100px;
-	width: 100px;
-	position: relative;
-	bottom: 0;
+	width: 100%;
 	border-style: solid;
 	background: red;
 	border-color: yellow;
+	position: relative;
+	bottom: 0;
 	border-width: 5px;
 }
 
-@keyframes translatie{
+@keyframes translatiec{
+	0%{
+		transform: translateX(-100%);
+	}
+
 	50%{
 		background: yellow;
 		border-color: red;
@@ -144,7 +149,6 @@ th,td{
 	100%{
 		background: red;
 		border-color: yellow;
-		transform: translateX(1000px);
+		transform: translateX(0%);
 	}
 }
-
