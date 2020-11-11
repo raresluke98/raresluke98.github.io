@@ -22,11 +22,12 @@
 <p>Pentru a doua etapa am rezolvat urmatoarele cerinte:</p>
 
 <ol>
-	<li>Am adaugat imagini responsive cu srcset: </li>
-	<li>Am adaugat audio si un video responsive cu stilizxare WebVTT</li>
-	<li>Am adaugat o animatie cu transformari geometrice</li>
-	<li>Am adaugat font awesome</li>
-	<li>Am impartit fisierele CSS conform schemei</li>
-	<li>Am impartit proiectul pe foldere</li>
-	<li>Am adaugat fisiere externe css</li>
+	<li>Am adaugat imagini responsive cu srcset: 166-171 index.html</li>
+	<li>Am adaugat audio si un video responsive cu stilizare WebVTT: 154-158 index.html, css/subtitles.css, media/video/eliberare_crap.vtt </li>
+	<li>Am adaugat o animatie cu transformari geometrice: 185-187 index.html, css/animatie-banner.css</li>
+	<li>Am facut o galerie statica cu tranzitii: 31-72 galerie_statica.html, style_gr.css, style_gr_768.css, scale_gr.css</li>
+	<li>Am adaugat font awesome: 15,24,42 index, 24 galerie_statica.html</li>
+	<li>Am impartit fisierele CSS conform schemei: animatie-banner.css, counter.css, scale_gr.css, style.css, style_gr.css, style_gr_768.css, subtitles.css</li>
+	<li>Am impartit proiectul pe foldere: media(img, audio, video), css</li>
+	<li>Am adaugat fisiere externe css: 15 index.html</li>
 </ol>
