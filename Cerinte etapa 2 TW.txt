@@ -7,7 +7,7 @@ OK	audio + un video responsive cu stilizare WebVTT: cerință custom
 
 OK?	animatie cu transformări geometrice (banner cu disclaimer: site-ul este un proiect școlar) cerință custom
 
-1/2	galerie statica cu tranzitii (pagină separată) cerință custom
+OK  galerie statica cu tranzitii (pagină separată) cerință custom
 
 OK	font extern: google API si font awesome pentru icon-uri: in h1(all), la galerie(galerie_statica), regulamet(index)
 
