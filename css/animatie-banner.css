@@ -1,0 +1,32 @@
+#banner {
+	animation-name: translatiec;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	border-style: solid;
+	background: red;
+	border-color: yellow;
+	position: relative;
+	bottom: 0;
+	border-width: 5px;
+}
+
+@keyframes translatiec{
+	0%{
+		transform: translateX(-100%);
+	}
+
+	50%{
+		background: yellow;
+		border-color: red;
+	}
+	100%{
+		background: red;
+		border-color: yellow;
+		transform: translateX(0%);
+	}
+}
