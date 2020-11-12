@@ -114,3 +114,8 @@ th,td{
 		/*float: left;*/
 	}
 }
+
+video {
+  width: 100%;
+  height: auto;
+}
