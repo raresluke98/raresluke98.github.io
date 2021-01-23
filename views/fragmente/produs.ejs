@@ -1,0 +1,17 @@
+<article id="articol_<%= locals.produs.id %>">
+    <h3 class="<%= locals.produs.categorie %>"><a href="/prod/<%= locals.produs.id %>"><%= locals.produs.nume %> </a></h3>
+    <br>
+    <p>Categorie: <%= locals.produs.categorie %></p>
+    <br>
+    <div class="container-lista-produse">
+        <p class="descriere-lista-produse">Descriere: <%= locals.produs.descriere %></p>
+        <img class="poza-lista-produse" src="<%= produs.imagine %>" alt="<%= produs.nume %>" />
+        <ol>
+            <li>Pret:<%= locals.produs.pret %></li>
+            <li>Culoare:<%= locals.produs.culoare %></li>
+            <li>Momeli:<%= locals.produs.momeli %></li>
+            <li>Data:<%= locals.produs.data_lansare.toDateString() %></li>
+            <li>Multi-segment:<%= locals.produs.multisegment %></li>
+        </ol>
+    </div> 
+</article>

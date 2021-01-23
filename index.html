@@ -8,6 +8,11 @@
 		<title>Pestisorul</title>
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style_768.css">
+		<link rel="stylesheet" href="css/style_mobile.css">
+		<link rel="stylesheet" href="css/meniu.css">
+		<link rel="stylesheet" href="css/meniu_768.css">
+		<link rel="stylesheet" href="css/meniu_mobile.css">
 		<link rel="stylesheet" href="css/subtitles.css">
 		<link rel="stylesheet" href="css/counter.css">
 		<link rel="stylesheet" href="css/all.min.css">
@@ -18,18 +23,44 @@
 	<body>
 		<a id="top"></a>
 		<img class="img-banner" src="media/img/banner.png" alt="pestisorul banner">
+
+		<nav>
+			<label id="hamburger" for="ch-menu">
+				<img src="media/img/Hamburger_icon_alb.png" alt="menu">
+			</label>
+			<input id="ch-menu" type="checkbox">
+			<ul class="menu">	<!-- am adaugat clasa drop_shadow pentru elementele corespunzatoare -->
+				<li>
+					<a id="home-font-awesome" class="drop_shadow" href="index.html">Acasa</a>
+					<span id="home-text" class="fas fa-home"></span>
+				</li>
+				<li><a class="drop_shadow" href="#introducere">Introducere</a></li>
+				<li><a class="drop_shadow" href="#regulament">Regulament</a></li>
+				<li>
+					<label for="opt_galerii" id="tab-backgorund-highlight">
+						Galerii
+					</label>
+					<!-- checkbox pt inchidere/deschidere meniu -->
+					<input class="ch-submenu" type="checkbox" id="opt_galerii">
+					<ul class="submenu">
+						<li><a href="galerie_statica.html">Statica</a></li>
+						<li><a href="galerie_animata.html">Animata</a></li>
+					</ul>
+				</li>
+		</nav>
+
 		<div class="wrapper">
 			<header>
 				<div class="main-content">
 					<h1>Pestisorul <span class="fas fa-fish"></span></h1>
-					<nav>
+					<!-- <nav>
 						<ul>
 						    <li><a href="#introducere">Introducere</a></li>
 						    <li><a href="#regulament">Regulament</a></li>
 						    <li><a href="#dim-legale">Dimensiuni legale pesti</a></li>
 						    <li><a href="#pestisor-auriu">Pestisor auriu</a></li>
 						</ul>
-					</nav>
+					</nav> -->
 				</div>
 			</header>
 			<main>
@@ -61,91 +92,93 @@
 						<article>
 							<h3>Dimensiuni minime pesti</h3>
 							<p>Acestea sunt dimensiunile minime pentru a putea retine un peste:</p>
-							<table id="dim-legale">
-								<caption>Dimensiunile legale ale pestilor</caption>
-								<thead>
-									<tr>
-										<th>Denumire</th>
-										<th>Nume binomial</th>
-										<th>Clasificare</th>
-										<th>Dimensiune minima</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Somn</td>
-										<td><i>Silurus glanis</i></td>
-										<td>Rapitor</td>
-										<td>50cm</td>
-									</tr>
-									<tr>
-										<td>Salau</td>
-										<td><i>Stizostedion sp.</i></td>
-										<td>Rapitor</td>
-										<td rowspan="2">40cm</td>
-									</tr>
-									<tr>
-										<td>Stiuca</td>
-										<td><i>Esox lucius</i></td>
-										<td>Rapitor</td>
-									</tr>
-									<tr>
-										<td>Crap</td>
-										<td><i>Cyprinus carpio</i></td>
-										<td>Omnivor</td>
-										<td>35cm</td>
-									</tr>
-									<tr>
-										<td>Clean</td>
-										<td><i>Leuciscus cephalus</i></td>
-										<td>Omnivor</td>
-										<td rowspan="3">25cm</td>
-									</tr>
-									<tr>
-										<td>Lin</td>
-										<td><i>Tinca tinca</i></td>
-										<td>Rapitor</td>
-									</tr>
-									<tr>
-										<td>Platica</td>
-										<td><i>Abramis brama</i></td>
-										<td>Omnivor</td>
-									</tr>
-									<tr>
-										<td>Pastrav</td>
-										<td><i>Salmo sp.</i></td>
-										<td>Rapitor</td>
-										<td>20cm</td>
-									</tr>
-									<tr>
-										<td>Babusca</td>
-										<td><i>Rutilus rutilus</i></td>
-										<td>Omnivora</td>
-										<td rowspan="3">15cm</td>
-									</tr>
-									<tr>
-										<td>Caras</td>
-										<td><i>Carassius auratus</i></td>
-										<td>Omnivor</td>
-									</tr>
-									<tr>
-										<td>Rosioara</td>
-										<td><i>Scardinus erythrophtalmus</i></td>
-										<td>Omnivor</td>
-									</tr>
-									<tr>
-										<td>Biban</td>
-										<td><i>Perca fluviatilis</i></td>
-										<td>Rapitor</td>
-										<td>12cm</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="4">Marimea pestelui stabilita pentru pescuit este determinata prin masurarea distantei de la varful botului pana la baza inotatoarei caudale.</td>
-									</tr>
-								</tfoot>
-							</table>
+							<div id="overflow-orizontal-tabel">
+								<table id="dim-legale">
+									<caption>Dimensiunile legale ale pestilor</caption>
+									<thead>
+										<tr>
+											<th>Denumire</th>
+											<th>Nume binomial</th>
+											<th>Clasificare</th>
+											<th>Dimensiune minima</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Somn</td>
+											<td><i>Silurus glanis</i></td>
+											<td>Rapitor</td>
+											<td>50cm</td>
+										</tr>
+										<tr>
+											<td>Salau</td>
+											<td><i>Stizostedion sp.</i></td>
+											<td>Rapitor</td>
+											<td rowspan="2">40cm</td>
+										</tr>
+										<tr>
+											<td>Stiuca</td>
+											<td><i>Esox lucius</i></td>
+											<td>Rapitor</td>
+										</tr>
+										<tr>
+											<td>Crap</td>
+											<td><i>Cyprinus carpio</i></td>
+											<td>Omnivor</td>
+											<td>35cm</td>
+										</tr>
+										<tr>
+											<td>Clean</td>
+											<td><i>Leuciscus cephalus</i></td>
+											<td>Omnivor</td>
+											<td rowspan="3">25cm</td>
+										</tr>
+										<tr>
+											<td>Lin</td>
+											<td><i>Tinca tinca</i></td>
+											<td>Rapitor</td>
+										</tr>
+										<tr>
+											<td>Platica</td>
+											<td><i>Abramis brama</i></td>
+											<td>Omnivor</td>
+										</tr>
+										<tr>
+											<td>Pastrav</td>
+											<td><i>Salmo sp.</i></td>
+											<td>Rapitor</td>
+											<td>20cm</td>
+										</tr>
+										<tr>
+											<td>Babusca</td>
+											<td><i>Rutilus rutilus</i></td>
+											<td>Omnivora</td>
+											<td rowspan="3">15cm</td>
+										</tr>
+										<tr>
+											<td>Caras</td>
+											<td><i>Carassius auratus</i></td>
+											<td>Omnivor</td>
+										</tr>
+										<tr>
+											<td>Rosioara</td>
+											<td><i>Scardinus erythrophtalmus</i></td>
+											<td>Omnivor</td>
+										</tr>
+										<tr>
+											<td>Biban</td>
+											<td><i>Perca fluviatilis</i></td>
+											<td>Rapitor</td>
+											<td>12cm</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="4">Marimea pestelui stabilita pentru pescuit este determinata prin masurarea distantei de la varful botului pana la baza inotatoarei caudale.</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 						</article>
 						<aside><p>Acest regulament si dimensiunile minime legale sunt preluate de pe site-ul Asociatiei Judetene a Vanatorilor si Pescarilor Sportivi Bacau (<a href="http://ajvpsbc.ro/regulament-practicare">ajvpsbc.ro</a>), din data de <time datetime="2020-10-30">30.10.2020</time>.</p></aside>
 					</section>
@@ -179,7 +212,7 @@
 			</address>
 			<a href="galerie_statica.html">Catre galeria statica</a>
 			<br>
-			<a href="#top">Inapoi la inceputul documentului</a>
+			<a href="#top">Inapoi la inceputul documentului <span class="fas fa-arrow-up"></span></a>
 		</footer>
 		</div>
 		<div id="banner">

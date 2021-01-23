@@ -1,0 +1,65 @@
+Cerinte etapa 3 TW:
+
+
+1. variante-meniu
+
+	Se va implementa un meniu derulant al site-ului care va fi prezent pe fiecare pagină și va lega toate paginile între ele. Nu e obligatoriu să folosiți aceleași culori, fonturi, dimensiuni ca în enunț și imagini/videoclipuri.
+
+	Cerinte HTML. Meniul va fi implementat cu ajutorul tagului <nav> care contine o lista neordonata cu linkuri. <-- OK !!!
+
+	Meniul va prezenta minim două submeniuri dintre care:
+
+		unul conține linkuri către alte pagini din site. Aceste pagini sunt grupate în meniu sub un nume descriptiv (exemplu: opțiunea galerii cu subopțiunile galerie statică și galerie dinamică).
+	
+		Al doilea conține linkuri către secțiuni dintr-una din pagini. Nume opțiunii care deschide submeniul va fi numele acelei pagini.
+
+	Cerințe SASS/CSS. Stilul pentru meniu se va implementa în SASS și va fi compilat în CSS având în vedere următoarele cerințe:
+
+		Pentru realizarea selectorilor complecși, se va folosi imbricarea din SASS
+	
+		Pentru blocuri de cod similare, în care diferă doar valorile proprietăților, se vor folosi mixins și instrucțiuni repetitive: @for, @while.
+	
+		În cazul în care aveți cod css pentru un element, care depinde de al câtelea element e în cadrul containerului, se vor folosi variabile SASS pentru a genera valorile dependente de acest aspect
+	
+		De asemenea, se vot folosi variabile SASS sau CSS pentru orice valoare repetitiva.
+	
+		Puneți în variabile CSS (declarate în selectorul body) orice informații care ar putea depinde de tema cromatică a site-ului (pentru a o putea schimba ușor).
+	
+	Se va realiza meniul pentru ecran mare, cu următoarele cerințe:
+
+		Când venim cu cursorul pe o opțiune din meniu, se va realiza tranziția indicată în videoclip: umbra textului va aluneca de sus, până se va alinia cu el, iar culoarea "butonului"-link se va schimba.
+	
+		Deschiderea submeniului se va face prin următoarea tranziție: se va scala de la 0 la înălțimea totală, pe verticală.
+	
+		Când venim cu cursorul pe o opțiune din submeniu se va realiza următoarea tranziție: subopțiunea se va sublinia treptat, si culoarea de background a "butonului"-opțiune se va schimba.
+
+		La redimensionarea paginii, pe ecran mediu, meniul își va schimba afișarea. Textul se va face mai mic, iar în locul butonului pentru pagina principală va apărea icon-ul cu o căsuță din font-awesome.
+
+		Pentru ecran mic, se vor ascunde opțiunile afișându-se într-un hamburger menu (sau veggie-burger menu pt vegetarieni 😁). Vedeți exemplul de layout. În afișarea burger submeniul se va deschide ca mai jos, înlocuind opțiunea pentru prima pagină cu un icon-căsuță. La apariția opțiunilor meniului, literele vor fi comprimate și se vor depărta într-o animație. La venirea cu cursorul pe o opțiune, nu se va mai realiza tranziția inițială cu căderea umbrei, ci doar schimbarea culorii de background.
+
+
+2. galerie-animata
+
+	Realizați o galerie de imagini cu 11 poze, conform videoclipului de mai jos. Galeria va avea un border-image cu o imagine aleasă de voi. Folosiți SASS în realizarea galeriei. <-- OK !!!
+
+	Trecerea la următoarea imagine se face prin turtirea imaginii pe verticală și apoi rotirea ei pentru a fi scoasă din "ecranul" galeriei. <-- OK !!!
+
+	Galeria va relua inaginile după ce o afișează pe ultima, rezultând într-o afișare continuă, repetitivă. Când se vine cu cursorul pe galerie, animația se oprește. Observați pauzele pe care le face în videoclip când cursorul este pe galerie. Galeria animată nu se va afișa pe ecran mediu și mic. <-- OK !!!
+
+	BUG: La hover, skip la poza.
+
+
+3. layout
+
+	1. scrisul să descrească odată cu redimensionarea paginii (pe ecran mic să fie scris mic, pe ecran mediu scrisul un pic mai mare, iar pe ecran mare scrisul să fie un pic mai mare decât pe mediu. Diferențele vor fi mici de 1-2px. În afară de font-size-ul html-ului restul dimensiunilor de text se vor da în unități relative (em, rem, vw etc) <-- OK !!!
+
+	2. Animațiile și tranzițiile vor fi dezactivate pe ecran mic (eventual și mediu, dacă doriți). <-- OK !!!
+
+	3. Layoutul paginii se va face cu ajutorul unui grid, implementând coloane pe ecranul mare, având măcar o zonă cu mai mult de 3 coloane cu diviziuni diferite ale paginii (e vorba de alte coloane decât cele din cerințele de la alte taskuri, precum galeria). Gridul va fi definit prin grid-template-areas. Se poate opta și pentru coloane realizate cu flexbox.Pe ecranul mediu nu se vor afișa mai mult de 2coloane, iar pe ecranul mic, gridul va avea o singură coloană.
+
+	4. Este foarte important să nu existe scrollbar orizontal. !!! <-- OK !!!
+
+	5. Linkul către începutul paginii va avea fie o poziție fixă, fie va fi în footer, și va cuprinde un icon cu o săgeată în sus. Modul de stilizare e lăsat la alegerea voastra, dar să dea impresia de buton (exemple stilizări: border, background, tranziție etc.), dar să nu se afișeze în formatul implicit de link.
+
+
+4. stilizare-tabel

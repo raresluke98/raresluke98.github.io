@@ -1,0 +1,27 @@
+{
+  "name": "tehnici-web",
+  "version": "1.0.0",
+  "description": "node init pentru proiectul de la tehnici web",
+  "main": "index.js",
+  "dependencies": {
+    "dateformat": "^4.4.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "window": "^4.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raresluke98/raresluke98.github.io.git"
+  },
+  "author": "damian-luca rares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raresluke98/raresluke98.github.io/issues"
+  },
+  "homepage": "https://github.com/raresluke98/raresluke98.github.io#readme"
+}

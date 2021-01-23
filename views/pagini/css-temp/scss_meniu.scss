@@ -1,0 +1,226 @@
+
+@media only screen and (min-width: 1000px) {	
+	nav{
+		width:100%;
+		position:fixed;
+		background: black;
+		height: 3rem;
+		top: 0px;
+		left: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		z-index: 20;
+		
+	}
+
+	ul.menu>{
+	    li, li>ul.submenu>li{
+	        display:block;
+	        font-size:1.2rem;
+	        font-weight:bold;
+	        height:3rem;
+	        line-height:3rem;
+	        text-align:center;
+	        list-style-type:none;
+	        background: black;
+	    }
+	    li{
+	        float:left;
+	        width:10rem;
+
+	        // 		am modificat ca sa pun animatia numai pentru fiii directi ai lui li COPY
+	        
+	        /*
+	        // adaug animatie pt shadow
+	        animation-name: falling-shadow;
+	        animation-duration: 2s;
+	        animation-timing-function: linear;
+	        animation-play-state: paused;
+	        */
+	    }
+
+	    // 			am scos si li:hover COPY
+	    
+	    /*
+	    li:hover{
+	    	animation-play-state: running;
+	    }
+	    */
+	    
+	    li>ul.submenu{
+	        position:relative;
+	        top:0px;
+	        //		am sters >a de mai jos!
+	        >li>a{
+	        	animation-name: underline-fade-reverse;
+	        	animation-duration: 0.5s;
+	        	animation-timing-function: linear;
+	        	animation-fill-mode: forwards;
+	        }
+
+	        >li>a:hover{
+	        	animation-name: underline-fade;
+	        	animation-duration: 0.5s;
+	        	animation-timing-function: linear;
+	        	animation-fill-mode: forwards;
+	        	//background: rgba(255,255,255,0.5);
+	        }
+	    }
+	    
+	    li>{
+	        a,label{
+	            display:block;
+	            height: 100%;
+	            text-decoration: none;
+	            color: white;
+	            //transition: all 0.5s linear; // AM ELIMINAT TRANZITIA
+	            background: black; // modificare pentru meniu negru
+	        }
+	    }
+	}
+
+
+	ul.submenu>{
+	    li>{
+	        a{
+	            display:block;
+	            height: 100%;
+	            //text-decoration: none; // MODIFICAT CA SA IMI PERMITA TEXT DECORATION
+	            color: white;
+	            //transition: all 0.5s linear; // AM ELIMINAT TRANZITIA 
+	            background: black; // modificare pentru meniu negru
+	        }
+	    }
+	}
+
+	/*
+	ul.menu {
+	    a:hover, label:hover { //aici foloseste hover ca sa schimbe background
+	        background: rgba(255,255,255,0.5);
+	    }
+	}
+	*/
+	ul.menu>{
+		li>a.drop_shadow{
+	    	animation-name: falling-shadow-reverse;
+	    	animation-duration: 0.5s;
+	    	animation-fill-mode: forwards;
+
+	    }
+
+	    li>a.drop_shadow:hover{
+	    	animation-name: falling-shadow;
+	        animation-duration: 0.5s;
+	        animation-timing-function: linear;
+	        animation-fill-mode: forwards;
+	        //background: rgba(255,255,255,0.5);
+	    
+	    }
+	}
+
+	ul.menu>li>label:hover{
+		animation-name: menu-highlight;
+		animation-duration: 0.5s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+
+	#hamburger {
+	    display:none;
+	    height: 3rem;
+	    
+	    img{
+	        height:100%;
+	        width:auto;
+	    }
+	}
+
+	#ch-menu, .ch-submenu{
+	    display:none;
+	}
+
+	ul.submenu{
+	    display:none;
+	}
+
+	/* aparitie submeniu */
+
+	/*
+	.ch-submenu:checked~ul.submenu{
+		display:block;
+	}
+	*/
+
+	.ch-submenu:checked~ul.submenu{
+		animation-name: submenu-expand;
+		animation-duration: 0.5s;
+		display:block
+	}
+
+	// modificari
+	@keyframes falling-shadow{
+		0%{
+			text-shadow: 0rem -2.5rem 0.8rem #FFFFFF;
+			background: rgba(255,255,255,0);
+		}
+		100%{
+			text-shadow: 0rem 0rem 0.1rem #FFFFFF;
+			background: rgba(255,255,255,0.5);
+		}
+	}
+
+	@keyframes falling-shadow-reverse{
+		0%{
+			text-shadow: 0rem 0rem 0.1rem #FFFFFF;
+			background: rgba(255,255,255,0.5);
+		}
+		100%{
+			text-shadow: 0rem -2.5rem 0.8rem #FFFFFF;
+			background: rgba(255,255,255,0);
+		}
+	}
+
+	@keyframes underline-fade{
+		0%{
+			text-decoration: underline solid rgba(255,255,255,0);
+			background: rgba(255,255,255,0);
+		}
+		100%{
+			text-decoration: underline solid rgba(255,255,255,1);
+			background: rgba(255,255,255,0.5);
+		}
+	}
+
+	@keyframes underline-fade-reverse{
+		0%{
+			text-decoration: underline solid rgba(255,255,255,1);
+			background: rgba(255,255,255,0.5);
+		}
+		100%{
+			text-decoration: underline solid rgba(255,255,255,0);
+			background: rgba(255,255,255,0);
+		}
+	}
+
+	@keyframes menu-highlight{
+		0%{
+			background: rgba(255,255,255,0);
+		}
+		100%{
+			background: rgba(255,255,255,0.5);
+		}
+	}
+
+	@keyframes submenu-expand{
+		0%{
+			transform-origin: top;
+			transform: scaleY(0);
+
+		}
+
+		100%{
+			transform-origin: top;
+			transform: scaleY(1);
+		}
+	}
+}

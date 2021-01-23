@@ -1,0 +1,213 @@
+@media only screen and (max-width: 999px) and (min-width: 768px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    background: black;
+    height: 3rem;
+    top: 0px;
+    left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 20;
+  }
+
+  ul.menu > {
+    /*
+    li:hover{
+    	animation-play-state: running;
+    }
+    */
+  }
+  ul.menu > li, ul.menu > li > ul.submenu > li {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    list-style-type: none;
+    background: black;
+  }
+  ul.menu > li {
+    float: left;
+    width: 10rem;
+    /*
+    // adaug animatie pt shadow
+    animation-name: falling-shadow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    */
+  }
+  ul.menu > li > ul.submenu {
+    position: relative;
+    top: 0px;
+  }
+  ul.menu > li > ul.submenu > li > a {
+    animation-name: underline-fade-reverse;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  ul.menu > li > ul.submenu > li > a:hover {
+    animation-name: underline-fade;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  ul.menu > li > a, ul.menu > li > label {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    background: black;
+  }
+
+  ul.submenu > li > a {
+    display: block;
+    height: 100%;
+    color: white;
+    background: black;
+  }
+
+  /*
+  ul.menu {
+      a:hover, label:hover { //aici foloseste hover ca sa schimbe background
+          background: rgba(255,255,255,0.5);
+      }
+  }
+  */
+  ul.menu > li > a.drop_shadow {
+    animation-name: falling-shadow-reverse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  ul.menu > li > a.drop_shadow:hover {
+    animation-name: falling-shadow;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  #home-text {
+    animation-name: falling-shadow-reverse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  #home-text:hover {
+    animation-name: falling-shadow;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  /*
+
+  #home-text:hover, ul.menu>li>label:hover{
+  	animation-name: menu-highlight;
+  	animation-duration: 0.5s;
+  	animation-timing-function: linear;
+  	animation-fill-mode: forwards;
+  }
+
+  */
+  #hamburger {
+    display: none;
+    height: 3rem;
+  }
+  #hamburger img {
+    height: 100%;
+    width: auto;
+  }
+
+  #ch-menu, .ch-submenu {
+    display: none;
+  }
+
+  ul.submenu {
+    display: none;
+  }
+
+  /* aparitie submeniu */
+  /*
+  .ch-submenu:checked~ul.submenu{
+  	display:block;
+  }
+  */
+  .ch-submenu:checked ~ ul.submenu {
+    animation-name: submenu-expand;
+    animation-duration: 0.5s;
+    display: block;
+  }
+
+  @keyframes falling-shadow {
+    0% {
+      text-shadow: 0rem -2.5rem 0.8rem #FFFFFF;
+      background: rgba(255, 255, 255, 0);
+    }
+    100% {
+      text-shadow: 0rem 0rem 0.1rem #FFFFFF;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  @keyframes falling-shadow-reverse {
+    0% {
+      text-shadow: 0rem 0rem 0.1rem #FFFFFF;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      text-shadow: 0rem -2.5rem 0.8rem #FFFFFF;
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes underline-fade {
+    0% {
+      text-decoration: underline solid rgba(255, 255, 255, 0);
+      background: rgba(255, 255, 255, 0);
+    }
+    100% {
+      text-decoration: underline solid white;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  @keyframes underline-fade-reverse {
+    0% {
+      text-decoration: underline solid white;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      text-decoration: underline solid rgba(255, 255, 255, 0);
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes menu-highlight {
+    0% {
+      background: rgba(255, 255, 255, 0);
+    }
+    100% {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  @keyframes submenu-expand {
+    0% {
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+    100% {
+      transform-origin: top;
+      transform: scaleY(1);
+    }
+  }
+  #home-font-awesome {
+    display: none;
+  }
+
+  #home-text {
+    background: black;
+    width: 100%;
+    line-height: 3rem;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=meniu_768.css.map */

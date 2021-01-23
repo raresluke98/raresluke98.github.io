@@ -1,0 +1,41 @@
+@media only screen and (max-width: 999px) and (min-width: 768px) {
+	.img-banner {
+		display: block;
+		width: 100%;
+
+		padding-bottom: 30px;
+	}
+
+	.wrapper {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.main-content h2 {
+		padding: 20px 0px 0px;
+	}
+
+	.main-content p {
+		padding: 20px 0px 0px;
+	}
+
+	.img-me {
+		padding-top: 30px;
+	}
+
+	h1{
+		font-size: 2.15em;
+	}
+
+	h2{
+		font-size: 1.4em;
+	}
+
+	h3{
+		font-size: 1.1em;
+	}
+
+	p{
+		font-size: 0.9em;
+	}
+}

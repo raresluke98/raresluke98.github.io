@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+	#gr {
+		display: grid;
+		grid-template-columns= repeat(2,1fr);
+		grid-template-areas: "poza_1    poza_2"
+							 "poza_3    poza_4"
+							 "poza_5    poza_6"
+							 "poza_7    poza_8"
+							 "poza_9    poza_10";
+	}
+
+	#gr>:nth-child(1){  grid-area: poza_1; }
+
+	#gr>:nth-child(2){  grid-area: poza_2; }
+
+	#gr>:nth-child(3){  grid-area: poza_3;}
+
+	#gr>:nth-child(4){  grid-area: poza_4; }
+
+	#gr>:nth-child(5){  grid-area: poza_5; }
+
+	#gr>:nth-child(6){  grid-area: poza_6; }
+
+	#gr>:nth-child(7){  grid-area: poza_7; }
+
+	#gr>:nth-child(8){  grid-area: poza_8; }
+
+	#gr>:nth-child(9){  grid-area: poza_9; }
+
+	#gr>:nth-child(10){ grid-area: poza_10; }
+}

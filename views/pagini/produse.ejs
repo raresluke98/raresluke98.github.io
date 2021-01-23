@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <!-- <%- include("../fragmente/head.ejs") %> -->
+        <title>Produse</title>
+        <meta charset = "utf-8">
+	    <meta name="keywords" content="Pescuit, pescar, magazin, undita, lanseta, mulineta, carlig, momeala, navod, mincioc">
+	    <meta name="description" content="Magazin pentru articole pescaresti. Lansete, mulinete, accesorii">
+	    <meta name="author" content="Damian-Luca Rares">
+		<title>Pestisorul</title>
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/style_768.css" type="text/css">
+		<link rel="stylesheet" href="css/style_mobile.css" type="text/css">
+		<link rel="stylesheet" href="css/meniu.css" type="text/css">
+		<link rel="stylesheet" href="css/meniu_768.css" type="text/css">
+		<link rel="stylesheet" href="css/meniu_mobile.css" type="text/css">
+		<link rel="stylesheet" href="css/subtitles.css" type="text/css">
+		<link rel="stylesheet" href="css/counter.css" type="text/css">
+        <link rel="stylesheet" href="css/all.min.css" type="text/css">
+        <link rel="stylesheet" href="css/lista_produse.css" type="text/css">
+		<link rel="stylesheet" href="css/animatie-banner.css" type="text/css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="media/img/favicon.ico">
+    </head>
+    <body>
+        <a id="top"></a>
+		<img class="img-banner" src="media/img/banner.png" alt="pestisorul banner">
+
+		<nav>
+			<label id="hamburger" for="ch-menu">
+				<img src="media/img/Hamburger_icon_alb.png" alt="menu">
+			</label>
+			<input id="ch-menu" type="checkbox">
+			<ul class="menu">	<!-- am adaugat clasa drop_shadow pentru elementele corespunzatoare -->
+				<li>
+					<a id="home-font-awesome" class="drop_shadow" href="index.html">Acasa</a>
+					<span id="home-text" class="fas fa-home"></span>
+				</li>
+				<li><a class="drop_shadow" href="#introducere">Introducere</a></li>
+				<li><a class="drop_shadow" href="#regulament">Regulament</a></li>
+				<li>
+					<label for="opt_galerii" id="tab-backgorund-highlight">
+						Galerii
+					</label>
+					<!-- checkbox pt inchidere/deschidere meniu -->
+					<input class="ch-submenu" type="checkbox" id="opt_galerii">
+					<ul class="submenu">
+						<li><a href="galerie_statica.html">Statica</a></li>
+						<li><a href="galerie_animata.html">Animata</a></li>
+					</ul>
+                </li>
+            </ul>
+		</nav>
+        <!-- <%- include("../fragmente/header.ejs") %> -->
+        <div class="wrapper">
+			<header>
+				<div class="main-content">
+					<h1>Pestisorul <span class="fas fa-fish"></span></h1>
+					<!-- <nav>
+						<ul>
+						    <li><a href="#introducere">Introducere</a></li>
+						    <li><a href="#regulament">Regulament</a></li>
+						    <li><a href="#dim-legale">Dimensiuni legale pesti</a></li>
+						    <li><a href="#pestisor-auriu">Pestisor auriu</a></li>
+						</ul>
+					</nav> -->
+				</div>
+			</header>
+            <main>
+                <h2>Produse</h2>
+                <br>
+                    <button id="buton-sortare-asc">Sorteaza!</button>
+                <br>
+                <% for(let i=0; i<locals.produse.length; i++) { %>
+                    <%- include("../fragmente/produs.ejs", {produs:locals.produse[i]}) %>
+                    <br><br>
+                <% } %>
+            </main>
+            <footer>
+                <a href="#top">Inapoi la inceputul documentului <span class="fas fa-arrow-up"></span></a>
+            </footer>
+        </div>
+
+        <!-- <%- include("../fragmente/footer.ejs") %> -->
+    </body>
+</html>

@@ -1,0 +1,4 @@
+TO DO
+
+1. de modificat dim. text in scss_meniu_768.scss
+2. hamburger pt ecran mic

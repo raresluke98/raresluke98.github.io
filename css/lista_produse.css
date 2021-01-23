@@ -1,0 +1,18 @@
+p.descriere-lista-produse {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+}
+
+img.poza-lista-produse {
+  display: inline-block;
+  width: 20%;
+  border-radius: 15%;
+}
+@media (max-width: 50px) {
+  img.poza-lista-produse {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=lista_produse.css.map */
